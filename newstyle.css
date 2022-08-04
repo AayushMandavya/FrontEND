@@ -145,7 +145,13 @@ h2 {
     flex-wrap: wrap;
     margin: 0 -20px;
 }
+.two-columns .col.large-col{
+    width: 58.33%;
+}
 
+.two-columns .col.small-col{
+    width: 41.66%;
+}
 .about-part {
     padding: 120px;
 }
