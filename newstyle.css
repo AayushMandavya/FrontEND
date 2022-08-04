@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    color: #010304;
+    font-size: 17px;
+    line-height: 26px; 
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    
+} 
+
+.banner-part{
+    /* height: 100vh; */
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-part::before{
+    content: '';
+    display: block;
+    height: 100vh;
+}
+
+.banner-part::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(191, 61, 66, 1);
+    mix-blend-mode: darken;
+}
+.bg-stretch{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.banner-content{
+    position: relative;
+    z-index: 9;
+    max-width: 500px;
+    /* width: 100%; */
+    color: #ffff;
+    text-align: center;
+    
+}
+
+.overline-text {
+    /* font-family: 'Roboto',sans-serif; */
+    text-transform: uppercase;
+    font-size: 34px;
+}
+
+h1{
+    /* font-family: 'Roboto', sans-serif; */
+    font-weight: 700;
+    font-size: 65px;
+    text-transform: uppercase;
+}
+
+.btn{
+    text-decoration: none;
+    color: #333333;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+.btn.primary {
+    padding: 15px;
+    border: 2px solid #ffff;
+    color: #ffff;
+    background-color: #333333;
+    min-width: 230px;
+    height: 60px;
+   
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+.btn.secondary {
+    padding: 15px;
+    color: #ffff;
+    background-color: #bf3d42;
+    min-width: 180px;
+    height: 60px;
+    border-radius: 27px;
+    }
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    padding: 15px 50px;
+}
+
+#header .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    font-size: 35px;
+    line-height: 2;
+    font-weight: 700;
+    color: #010304;
+    text-transform: uppercase;
+    margin: 0 0 45px;
+}
+.style{
+    position: relative;
+    padding-left: 44px;
+}
+.style::after{
+    position: absolute;
+    top: 9px;
+    left: 0;
+    content: '';
+    width: 42px;
+    height: 42px;
+    display: block;
+    background: url('./Images/icon-chips.png') no-repeat center /cover;
+}
+
+
+.two-columns {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+}
+
+.about-part {
+    padding: 120px;
+}
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+.two-columns .col {
+    width: 50%;
+    padding: 0 20px;
+    
+}
+
+.about-part .image-wrap {
+    position: relative;
+    border-radius: 25px;
+    padding-top: 61%;
+    overflow: hidden;
+}
+
+.about-part p{
+    margin: 0;
+}
+
+.about-part .btn-wrap{
+    margin-top: 60px;
+}
