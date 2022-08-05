@@ -98,6 +98,7 @@ h1{
     min-width: 180px;
     height: 60px;
     border-radius: 27px;
+    
     }
 
 #header {
@@ -123,10 +124,14 @@ h2 {
     color: #010304;
     text-transform: uppercase;
     margin: 0 0 45px;
+    
 }
 .style{
     position: relative;
     padding-left: 44px;
+    display: inline-block;
+    vertical-align: top;
+    
 }
 .style::after{
     position: absolute;
@@ -140,10 +145,23 @@ h2 {
 }
 
 
-.two-columns {
+.two-columns ,
+.four-columns{
     display: flex;
     flex-wrap: wrap;
     margin: 0 -20px;
+    
+}
+
+.four-columns .col{
+    width: 315px;
+    color: #fff;
+    flex: 1;
+    padding: 0 10px;
+}
+
+.four-columns{
+    margin: 0 10px;
 }
 .two-columns .col.large-col{
     width: 58.33%;
@@ -159,6 +177,11 @@ h2 {
     max-width: 1170px;
     width: 100%;
     margin: 0 auto;
+}
+
+.container.lg{
+    max-width: 1310px;
+
 }
 .two-columns .col {
     width: 50%;
@@ -179,4 +202,92 @@ h2 {
 
 .about-part .btn-wrap{
     margin-top: 60px;
+}
+
+.products-part{
+    text-align: center;
+   
+}
+.products-part h2{
+    line-height: 1;
+    margin-bottom: 17px;
+}
+
+.products-part .style::after{
+    top:-6px;
+}
+.products-part p{
+    margin: 0 0 15px;
+   
+}
+.products-part .four-columns{
+    padding: 45px 0;
+}
+
+.product-detail{
+    position: relative;
+    background-color: #121212;
+    border-radius: 23px;
+    overflow: hidden;
+    font-family: 'Poppins',sans-serif;
+    
+}
+
+
+.products-part .col .product-image{
+    height: 400px;
+    position: relative;
+}
+.products-part .col:nth-child(2) .product-image{
+    height: 305px;
+}
+.products-part .col:nth-child(3) .product-image{
+    height:250px;
+}
+.products-part .col:last-child .product-image{
+    height: 182px;
+}
+.product-content{
+    padding: 20px;
+    font-size: 14px;
+    line-height: 1.57;
+}
+.product-code{
+    position: absolute;
+    bottom: 155px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    color:#fff;
+    font-size: 25px;
+    margin :-30px auto 13px;
+    font-weight: 400;
+    background-color: #191919;
+    align-items: center;
+    border: 2px solid #b03d42;
+    line-height: 62px;
+    text-align: center;
+
+}
+.product-detail h3{
+    margin-bottom: 20px;
+
+}
+h3{
+    font-size: 25px;
+    line-height: 1.3;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.products-part .button-wrap{
+    padding: 15px 0;
+}
+.products-part .btn{
+    text-transform: capitalize;
+}
+.products-part .btn.primary{
+    border-color:#b03d42 ;
+    
 }
